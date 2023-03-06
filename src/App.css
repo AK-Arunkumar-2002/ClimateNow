@@ -1,0 +1,89 @@
+body{
+    text-align: center;
+    background: radial-gradient(circle, rgba(117,180,227,1) 0%, rgba(143,224,255,1) 100%);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+img{
+    width: 64px;
+    height: 64px;
+    margin-top: 10px;
+    display: inline;
+}
+
+.name{
+    color: #ffffff;
+    position: relative;
+    top: -20px;
+    margin-left: 10px;
+    display: inline;
+}
+
+.inputbox{
+    margin-top: 20px;
+    margin-right: 2px;
+    width: 40%;
+    height: 20px;
+}
+
+.btn{
+    padding: 4px 2px 3px 2px;
+}
+
+.greetings{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #31255a;
+}
+
+.loco{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.logo{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.txt{
+    margin-top: 0;
+}
+
+.fl{
+    color: #31255a;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.fc{
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.ff{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.ac{
+    color: #31255a;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.actc{
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 0;
+}
+
+.actf{
+    display: inline-block;
+    margin-top: 0;
+}
+
+.royalty{
+    bottom: 0;
+}
