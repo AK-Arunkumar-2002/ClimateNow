@@ -12,7 +12,7 @@ const App = () => {
     const search = async (city) => {
         const response = await fetch(`${api_url}&q=${city}&aqi=no`);
         const data = await response.json();
-        console.log(data);
+        console.log(data); 
         setWeather(data);
     }
 
