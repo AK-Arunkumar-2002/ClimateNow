@@ -1,7 +1,7 @@
 import { useState, useEffect, React } from 'react';
 import './App.css';
 
-const api_url = 'http://api.weatherapi.com/v1/current.json?key=2551c2dd7e674f31b49120935230603';
+const api_url = 'https://api.weatherapi.com/v1/current.json?key=2551c2dd7e674f31b49120935230603';
 
 
 const App = () => {
@@ -9,8 +9,8 @@ const App = () => {
     const [weather,setWeather] = useState([]);
     const [city,setCity] = useState('London');
 
-    const search = async (city) => {
-        const response = await fetch(`${api_url}&q=${city}&aqi=no`);
+    const search = async ({city}) => {
+        const response = await fetch(`${api_url}&q=${city}&aqi=yes`);
         const data = await response.json();
         console.log(data); 
         setWeather(data);
@@ -30,7 +30,7 @@ const App = () => {
         <button className="btn" onClick={()=>search(city)}>Search</button>
         <h2 className="greetings">Today's Climate in </h2>  
         <h1 className="loco">{weather?.location?.name}</h1>
-        <img className="logo" src={weather?.current?.condition?.icon} alt="weather"></img>
+        <img className="logo" src={weather?.current?.condition?.icon} alt="weather" />
         <h2 className="txt">{weather?.current?.condition?.text}</h2>
         <h2 className="fl">Climate Feels like</h2>
         <h1 className="fc">{weather?.current?.feelslike_f} F</h1>
